@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 const connection_url =
-  "mongodb+srv://admin:admin@cluster0.byic4.mongodb.net/tiktokdb?retryWrites=true&w=majority";
+  "mongodb+srv://admin:admin@cluster0.qyvfl.mongodb.net/tiktokdb?retryWrites=true&w=majority";
 
 // middleware
 app.use(express.json());

@@ -3,12 +3,10 @@ import mongoose from "mongoose";
 
 const accountSchema = mongoose.Schema({
   title: String,
-  desc: String,
-  song: String,
-  like: String,
-  comment: String,
-  share: String,
-  video: String,
+  description: String,
+  subtitle: String,
+  sources: String,
+  thumb: String,
 });
 
-export default mongoose.model("account", accountSchema);
+export default mongoose.model("tiktok", accountSchema);
