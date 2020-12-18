@@ -5,7 +5,7 @@ import Account from "./dbAccount.js";
 
 // App config
 const app = express();
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 const connection_url =
   "mongodb+srv://admin:admin@cluster0.byic4.mongodb.net/tiktokdb?retryWrites=true&w=majority";
