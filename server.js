@@ -14,11 +14,11 @@ const connection_url =
 app.use(express.json());
 // app.use(cors);
 
-// app.use((req, res, next) => {
-//   res.setHeaders("Access-Control-Allow-Origin", "*"),
-//     res.setHeaders("Access-Control-Allow-Headers", "*"),
-//     next();
-// });
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*"),
+    res.setHeader("Access-Control-Allow-Headers", "*"),
+    next();
+});
 
 // Db config
 mongoose.connect(connection_url, {
